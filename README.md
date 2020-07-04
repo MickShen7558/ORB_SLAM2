@@ -13,6 +13,15 @@ Vocabulary/ORBvoc.txt
 /media/qzj/Document/grow/research/slamDataSet/sweepRobot/round2/cali/result/data_params_matlab.yaml
 /media/qzj/Document/grow/research/slamDataSet/sweepRobot/round2/01
 ```
+
+```
+./Examples/Stereo/stereo_relative_position 
+./Vocabulary/ORBvoc.txt 
+~/data/dataset/cameraParams.yaml 
+~/data/dataset/01/ 
+self #(any words except "kitti")
+```
+
 # ORB-SLAM2
 **Authors:** [Raul Mur-Artal](http://webdiis.unizar.es/~raulmur/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/), [J. M. M. Montiel](http://webdiis.unizar.es/~josemari/) and [Dorian Galvez-Lopez](http://doriangalvez.com/) ([DBoW2](https://github.com/dorian3d/DBoW2))
 

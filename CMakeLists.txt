@@ -38,7 +38,7 @@ ENDIF(CMAKE_COMPILER_IS_GNUCC)
 
 LIST(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/cmake_modules)
 
-find_package(OpenCV 3.4.7 QUIET)
+find_package(OpenCV 3.0 QUIET)
 if(NOT OpenCV_FOUND)
    find_package(OpenCV 2.4.3 QUIET)
    if(NOT OpenCV_FOUND)
@@ -109,6 +109,10 @@ target_link_libraries(stereo_euroc ${PROJECT_NAME})
 add_executable(stereo_robot
         Examples/Stereo/stereo_robot.cc)
 target_link_libraries(stereo_robot ${PROJECT_NAME})
+
+add_executable(stereo_relative_position
+        Examples/Stereo/stereo_relative_position.cpp)
+target_link_libraries(stereo_relative_position ${PROJECT_NAME})
 
 
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${PROJECT_SOURCE_DIR}/Examples/Monocular)
